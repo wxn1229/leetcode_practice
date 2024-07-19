@@ -2,6 +2,8 @@
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "target": "ES6",
+    "lib": ["es2015", "dom"],
     "strict": true,
     "esModuleInterop": true,
     "outDir": "dist",

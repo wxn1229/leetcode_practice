@@ -10,12 +10,22 @@ function removeDuplicates(nums: number[]): number {
   return inputIndex + 1;
 }
 
+// interesting solutiong
+function removeDuplicates2(nums: number[]): number {
+  const set = new Set(nums);
+  nums.length = 0;
+  // for(var i = 0; i < set.size; i++)
+  console.log(set);
+  nums.push(...set);
+  return nums.length;
+}
+
 // main
 let nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
 
 console.log(
   "🚀 ~ removeDuplicates ~ removeDuplicates:",
-  removeDuplicates(nums)
+  removeDuplicates2(nums)
 );
 
 console.log("🚀 ~ nums:", nums);
